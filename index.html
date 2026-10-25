@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Compare staffing orders and draft agreements. Find commercial mismatches, inspect source evidence, and prepare clarifications before approval.">
+  <title>Staffing Agreement Readiness Assistant</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9IiMxNzRjNDMiLz48dGV4dCB4PSIxMyIgeT0iNDQiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhIiBmb250LXNpemU9IjQyIj5TPC90ZXh0PjxwYXRoIGQ9Ik0zOSAzNmw1IDUgMTAtMTMiIHN0cm9rZT0iI2Q0ZWVhMiIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIi8+PC9zdmc+Cg==" type="image/svg+xml"><style>:root{--ink:#1c302d;--muted:#697872;--green:#174c43;--lime:#dcf1b1;--paper:#fafbf7;--line:#dce3dc;--soft:#f1f4ee;--amber:#92621b;--red:#a03a2b;--sans:'Avenir Next','Segoe UI',sans-serif;--serif:'Iowan Old Style','Palatino Linotype',Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.65 var(--sans)}button,input,textarea,select{font:inherit}button,a,label.upload{touch-action:manipulation}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #7aaa55;outline-offset:4px}h1,h2,h3,p{margin-top:0}h2{font:normal 35px/1.2 var(--serif);letter-spacing:-.6px;margin-bottom:14px}h3{font-size:15px;font-weight:650;line-height:1.4}p{margin-bottom:14px}button{border:0}.topbar{height:90px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:0 5%;gap:24px}.brand{display:flex;gap:10px;align-items:center;text-decoration:none;font-size:22px;font-weight:700;letter-spacing:-.8px}.brand-light{font-weight:400}.brand-icon{position:relative;display:grid;place-items:center;background:var(--green);border-radius:9px;color:white;width:35px;height:37px;font:26px var(--serif)}.brand-icon span{position:absolute;right:3px;bottom:2px;font:15px var(--sans);color:var(--lime)}nav{display:flex;gap:27px}nav a{text-decoration:none;color:var(--muted);font-size:13px}nav a.active{color:var(--green);font-weight:600}.portfolio{font-size:11px;color:var(--muted)}main{max-width:1480px;margin:auto;padding:0 5%}.hero{display:grid;grid-template-columns:1.65fr 1fr;gap:10%;padding:72px 0 65px;align-items:center}.eyebrow{font-size:10px;letter-spacing:1.7px;font-weight:700;color:var(--green);margin-bottom:22px}.dot{display:inline-block;width:6px;height:6px;background:#5e8967;border-radius:50%;margin-right:5px}h1{font:normal clamp(42px,4.6vw,67px)/1.06 var(--serif);letter-spacing:-1.9px;margin-bottom:25px}h1 em{font-weight:normal;color:var(--green)}.intro{font-size:15px;max-width:570px;color:#63746c;line-height:1.8}.primary{display:inline-flex;align-items:center;justify-content:center;gap:25px;background:var(--green);color:white;padding:13px 22px;border-radius:6px;font-weight:600;font-size:12px;text-decoration:none;min-height:46px}.primary:hover{background:#236257}.hero-action{margin-top:7px}.hero-note{position:relative;background:#eef2e7;border:1px solid #e0e6d5;padding:29px;border-radius:9px;transform:rotate(1.5deg);max-width:355px}.note-label{font-size:9px;font-weight:700;letter-spacing:1.6px;color:#67765f}.mini-doc{border:1px solid #dce2d4;background:#fffefb;border-radius:5px;margin:17px 0 12px;padding:15px 20px;box-shadow:0 3px 6px #29403204}.mini-doc>span{display:block;color:var(--muted);font-size:11px}.mini-doc strong{font:normal 27px var(--serif)}.mini-doc strong span{font:11px var(--sans);margin-left:5px;color:var(--muted)}.hero-note p{font-size:11px;margin-top:18px;margin-bottom:3px}.warning-icon{color:var(--amber);font-weight:bold;background:#f4e6cb;display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;margin-right:5px}.hero-note small{font-size:9px;color:var(--muted)}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:25px}.section-heading .eyebrow{margin-bottom:10px}.section-heading h2{margin:0}.workspace{padding:30px 0 65px}.text-button{background:none;color:var(--green);padding:8px 0;font-size:12px}.workspace-grid{display:grid;grid-template-columns:220px minmax(0,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;background:white;box-shadow:0 8px 35px #1b3b2e04}.sidebar{background:#f2f5ee;padding:27px 19px;border-right:1px solid var(--line)}.sidebar h3{font-size:13px;margin-bottom:8px}.sidebar>p{font-size:11px;color:var(--muted);margin-bottom:22px}.sample{display:block;text-align:left;width:100%;padding:12px 12px;background:transparent;border:1px solid transparent;border-radius:6px;margin-bottom:8px;color:var(--ink)}.sample strong,.sample small{display:block}.sample strong{font-size:12px}.sample small{font-size:10px;color:var(--muted);margin-top:3px}.sample.selected{background:#fff;border-color:#bdcbb8;box-shadow:0 2px 4px #203e2405}.sample.selected strong:after{content:'✓';float:right;color:var(--green)}.own-button{background:none;color:var(--green);font-size:11px;padding:10px 8px;text-align:left;width:100%}.privacy{border-top:1px solid #dce3d7;margin-top:27px;padding-top:22px}.privacy>span{font-size:19px;display:block;color:var(--green)}.privacy strong,.scope strong{font-size:11px}.privacy p,.scope p{font-size:10px;line-height:1.8;color:var(--muted);margin:6px 0 0}.scope{margin-top:22px}.work-main{min-width:0;padding:24px}.steps{list-style:none;padding:0;display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:20px;margin:0 0 24px}.steps li{color:#8d9992;font-size:10px;display:flex;align-items:center;gap:7px}.steps b{display:inline-grid;place-items:center;width:22px;height:22px;background:var(--soft);border-radius:50%;font-size:10px}.steps li.current{color:var(--green)}.steps .current b{background:var(--green);color:#fff}.document-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.document-card{min-width:0;border:1px solid var(--line);border-radius:7px;overflow:hidden}.doc-heading{padding:16px 14px;display:flex;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid var(--line)}.doc-tag{font-size:8px;color:var(--green);letter-spacing:1.1px;font-weight:bold}.doc-tag.draft{color:#82795a}.doc-heading h3{font-size:12px;margin:4px 0 0}.upload{font-size:9px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;color:var(--muted);white-space:nowrap}.document-card textarea{border:0;resize:vertical;width:100%;padding:16px 14px;min-height:290px;font:11px/1.95 'SFMono-Regular',Consolas,monospace;color:#43534d;background:#fff;display:block}.doc-foot{display:flex;justify-content:space-between;gap:8px;font-size:8px;color:var(--muted);padding:9px 14px;background:#fbfcf9;margin:0;border-top:1px solid var(--line)}.review-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;padding-top:23px}.review-toolbar label{font-size:10px;display:block;color:var(--muted)}select{background:white;border:1px solid var(--line);border-radius:4px;font-size:11px;padding:7px 25px 7px 8px;color:var(--ink)}#mode-note{font-size:9px;color:var(--muted);max-width:340px;margin:6px 0 0}#notice{font-size:12px;margin:13px 0 0;color:var(--muted)}#notice.error{color:var(--red)}#results{border-top:1px solid var(--line);margin-top:26px;padding-top:25px}.status-banner{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:18px;border-radius:6px;background:#faf2e5;border:1px solid #e8d6b4;margin-bottom:17px}.status-banner.good{background:#eef6e7;border-color:#caddbc}.status-banner h3{font:23px var(--serif);margin:0 0 4px}.status-banner p{font-size:10px;margin:0;color:var(--muted)}.review-count{font:27px var(--serif);color:var(--amber);white-space:nowrap}.review-count small{font:10px var(--sans);display:block;color:var(--muted)}.results-tools{display:flex;justify-content:space-between;align-items:center;margin:16px 0;gap:15px}.results-tools label{font-size:11px}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:11px}th{text-align:left;font-size:9px;font-weight:600;color:var(--muted);background:var(--soft);padding:10px}td{padding:13px 10px;border-bottom:1px solid var(--line);vertical-align:top;max-width:210px;overflow-wrap:anywhere}td:first-child{font-weight:600}td small{display:block;color:var(--muted);font-size:9px;font-weight:400}.badge{font-size:9px;border-radius:20px;padding:4px 7px;white-space:nowrap;display:inline-block;background:#edf3e8;color:#3d6346}.badge.mismatch{background:#f9e9e2;color:var(--red)}.badge.missing,.badge.uncertain{background:#f6eddd;color:var(--amber)}.badge.optional{background:#eef0ed;color:#63746c}.badge.exception{background:#e6f0ee;color:var(--green)}.inspect{background:none;color:var(--green);font-size:10px;text-decoration:underline;text-underline-offset:3px;padding:3px 0}.exposure{background:#f5f6ed;padding:16px;border-radius:5px;margin-top:19px}.exposure p{font-size:11px;margin:0}.exposure strong{font-size:17px}.exposure label{font-size:10px;display:block;margin-top:9px}.exposure input{width:80px;padding:4px;margin-left:7px;border:1px solid var(--line);border-radius:4px}.exposure small{display:block;color:var(--muted);font-size:9px;margin-top:7px}.next-step{margin-top:26px}.next-step h3{margin-bottom:5px}.next-step>p{font-size:11px;color:var(--muted)}.next-step textarea{width:100%;min-height:180px;font-size:11px;line-height:1.7;padding:14px;border:1px solid var(--line);border-radius:5px;resize:vertical}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:13px}.secondary{border:1px solid #c9d4c7;border-radius:5px;background:white;color:var(--green);padding:9px 15px;font-size:11px}.information{padding:55px 0 65px;border-top:1px solid var(--line)}.workflow-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:35px;margin-top:35px}.workflow-cards article>span{font:italic 29px var(--serif);color:#8d9e85;display:block;margin-bottom:17px}.workflow-cards h3{font-size:14px}.workflow-cards p{font-size:12px;color:var(--muted);line-height:1.8}.value-section{display:grid;grid-template-columns:1fr 1.25fr;gap:70px;background:#edf2e6;margin:0 -2.3%;padding:45px 3%;border:1px solid #e0e7d5;border-radius:9px}.value-section>div>p:not(.eyebrow){font-size:12px;color:var(--muted);max-width:390px}.calc-inputs{display:grid;grid-template-columns:1fr 1fr;gap:15px}.calc-inputs label{font-size:10px;color:#596e5e}.calc-inputs input{width:100%;background:#fcfdf9;border:1px solid #cfdbc6;padding:9px 12px;border-radius:5px;margin-top:5px;font-size:14px;color:var(--ink)}.calc-output{display:flex;gap:35px;margin:24px 0 13px;padding-top:20px;border-top:1px solid #cfdbc6}.calc-output strong{font:normal 31px var(--serif);display:block}.calc-output span{font-size:9px;color:var(--muted)}.calculator small{font-size:9px;color:var(--muted)}.about{border:0;padding-top:70px;display:grid;grid-template-columns:1fr 1.25fr;gap:70px}.about p{font-size:12px;color:var(--muted);line-height:1.9}.about h3{margin-bottom:7px}.text-link{font-size:11px;color:var(--green);text-underline-offset:4px}footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:23px 5%;font-size:10px;color:var(--muted)}dialog{border:1px solid var(--line);border-radius:10px;width:min(740px,93vw);max-height:90vh;overflow-y:auto;padding:28px;color:var(--ink);box-shadow:0 20px 80px #18342733}dialog::backdrop{background:#15332a77;backdrop-filter:blur(3px)}.dialog-heading{display:flex;justify-content:space-between;align-items:start;gap:20px}.dialog-heading h2{font-size:26px}.icon-button{background:none;font-size:27px;color:var(--muted);padding:0 4px}dialog label{display:block;font-size:11px;margin-bottom:12px}dialog input,dialog textarea{display:block;width:100%;border:1px solid var(--line);border-radius:4px;padding:10px;margin-top:5px;color:var(--ink)}dialog textarea{min-height:70px;resize:vertical}.correction-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.evidence-card{padding:15px;background:var(--soft);margin:12px 0;border-radius:5px;font-size:12px}.evidence-card h3{font-size:11px;margin:0 0 5px}.evidence-card blockquote{margin:8px 0;border-left:2px solid #9eb59a;padding-left:11px;font-size:11px;overflow-wrap:anywhere}.evidence-card small,.small{font-size:10px;color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:23px 0}#dialog-error{font-size:11px;color:var(--red)}.sr-only{position:absolute;clip:rect(0,0,0,0);height:1px;width:1px;overflow:hidden}.skip{position:absolute;left:10px;top:-60px;background:white;padding:10px;z-index:20}.skip:focus{top:10px}[hidden]{display:none!important}
+@media(min-width:1600px){main{padding:0 60px}}@media(max-width:1100px){.portfolio{display:none}.hero{gap:5%;grid-template-columns:1.4fr 1fr}.workspace-grid{grid-template-columns:180px minmax(0,1fr)}.sidebar{padding:23px 13px}.work-main{padding:20px 15px}.doc-heading{flex-direction:column;align-items:start;gap:8px}.hero-note{padding:23px}.value-section,.about{gap:35px}.steps li{font-size:9px;gap:5px}}@media(max-width:760px){.topbar{height:auto;min-height:85px;flex-wrap:wrap;padding:17px 5%;gap:12px}.brand{font-size:20px}nav{gap:18px}nav a{font-size:11px}.hero{grid-template-columns:1fr;padding-top:45px;gap:35px}.hero-note{max-width:none;transform:none;display:grid;grid-template-columns:1fr 1fr;gap:0 10px}.note-label,.hero-note p,.hero-note small{grid-column:1/-1}.hero-note .mini-doc{margin-bottom:0;padding:12px}.mini-doc strong{font-size:23px}.hero-note p{margin-top:15px}.workspace{padding-top:10px}.section-heading h2{font-size:27px}.workspace-grid{grid-template-columns:1fr}.sidebar{border-right:0;border-bottom:1px solid var(--line)}.sidebar>h3,.sidebar>p,.privacy,.scope{display:none}#samples{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.sample{padding:10px 8px;margin:0}.sample strong{font-size:10px}.sample small{font-size:8px}.sample.selected strong:after{display:none}.own-button{font-size:10px;width:auto;margin-top:7px}.work-main{padding:20px 13px}.document-grid{gap:9px}.document-card textarea{min-height:310px;font-size:10px;padding:13px 10px}.doc-heading{padding:11px 10px}.doc-heading h3{font-size:11px}.doc-foot{font-size:8px;padding:8px;flex-direction:column;gap:0}.review-toolbar{flex-direction:column;align-items:stretch}.review-toolbar .primary{width:100%}#mode-note{max-width:none}.steps{gap:7px}.steps li{font-size:8px;gap:4px}.steps b{width:18px;height:18px;flex-shrink:0}.workflow-cards{grid-template-columns:1fr 1fr;gap:20px}.information{padding-top:40px;padding-bottom:40px}.value-section,.about{grid-template-columns:1fr;gap:22px}.value-section{margin:0;padding:25px 20px}.value-section h2{font-size:30px}.calc-output{gap:20px}.calc-output strong{font-size:27px}.about{padding-top:45px}.correction-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:5px}.results-tools{align-items:start;flex-direction:column}.review-count{font-size:23px}.status-banner{padding:13px}.status-banner h3{font-size:21px}.primary{font-size:11px}dialog{padding:20px}.table-scroll{margin:0 -3px}table{min-width:570px}.eyebrow{font-size:9px}h1{font-size:45px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+  <script type="module">const {FIELDS,SAMPLES,extractStructured,validateAIFields,compare,readiness,exposure,clarification,normalize}=(()=>{
+const FIELDS = [
+  ['client','Client entity'], ['supplier','Staffing entity'], ['assignment','Assignment ID'],
+  ['role','Role'], ['start','Start date'], ['end','End date'], ['rate','Client bill rate'],
+  ['currency','Currency'], ['basis','Rate basis'], ['hours','Weekly hours'], ['payment','Payment terms']
+].map(([key,label])=>({key,label}));
+
+const labels = {
+  client: /^(?:client(?: entity)?|customer)\s*:\s*(.+)$/i,
+  supplier: /^(?:staffing (?:entity|agency)|supplier|agency)\s*:\s*(.+)$/i,
+  assignment: /^(?:assignment(?: id)?|order(?: id)?|job order)\s*:\s*(.+)$/i,
+  role: /^(?:role|job title)\s*:\s*(.+)$/i,
+  start: /^(?:start(?: date)?|commencement date)\s*:\s*(.+)$/i,
+  end: /^(?:end(?: date)?|completion date)\s*:\s*(.+)$/i,
+  rate: /^(?:client bill rate|bill rate|billing rate)\s*:\s*(.+)$/i,
+  currency: /^currency\s*:\s*(.+)$/i,
+  basis: /^(?:rate basis|billing basis)\s*:\s*(.+)$/i,
+  hours: /^(?:weekly hours|hours per week)\s*:\s*(.+)$/i,
+  payment: /^(?:payment(?: terms)?)\s*:\s*(.+)$/i
+};
+function normalize(key, raw) {
+  if(typeof raw !== 'string' || !raw.trim()) return null;
+  let v=raw.trim().replace(/\s+/g,' ');
+  if(['start','end'].includes(key)) {
+    // Numeric dates must be ISO. Never guess a locale.
+    let year,month,day;
+    if(/^\d{4}-\d{2}-\d{2}$/.test(v)) [year,month,day]=v.split('-').map(Number);
+    else {
+      const m=v.match(/^(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})$/i);
+      if(!m) return null;
+      day=Number(m[1]); month=['january','february','march','april','may','june','july','august','september','october','november','december'].indexOf(m[2].toLowerCase())+1;year=Number(m[3]);
+    }
+    const date=new Date(Date.UTC(year,month-1,day));
+    if(date.getUTCFullYear()!==year||date.getUTCMonth()!==month-1||date.getUTCDate()!==day) return null;
+    return `${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+  }
+  if(key==='rate') {
+    const m=v.match(/^(?:(?:INR|USD|EUR|GBP|AUD|CAD|₹|\$|€|£)\s*)?([\d,]+(?:\.\d{1,2})?)(?:\s*(?:INR|USD|EUR|GBP|AUD|CAD))?(?:\s*(?:\/|per\s+)(?:h(?:ou)?r|hour|day|week|month)s?)?$/i);
+    if(!m || !/^\d+(?:,\d{3})*(?:\.\d{1,2})?$/.test(m[1]))return null;
+    const n=Number(m[1].replaceAll(',',''));return n>0?String(n):null;
+  }
+  if(key==='hours') {
+    v=v.toLowerCase().replace(/^forty\b/,'40');
+    const m=v.match(/^(\d+(?:\.\d+)?)\s*(?:(?:hours?|hrs?)?(?:\s*(?:\/|per\s+)?week(?:ly)?)?)?$/i);
+    return m&&Number(m[1])>0&&Number(m[1])<=168?String(Number(m[1])):null;
+  }
+  if(key==='payment') {
+    const m=v.match(/^(?:net\s*)?(\d{1,3})(?:\s*days?)?$/i);return m?String(Number(m[1])):null;
+  }
+  if(key==='currency')return /^(INR|USD|EUR|GBP|AUD|CAD)$/i.test(v)?v.toUpperCase():null;
+  if(key==='basis') {
+    if(/^(?:h|hr|hour|hourly)$/i.test(v))return 'hour';
+    if(/^(?:d|day|daily)$/i.test(v))return 'day';
+    if(/^(?:week|weekly)$/i.test(v))return 'week';
+    if(/^(?:month|monthly)$/i.test(v))return 'month';
+    return null;
+  }
+  return v.toLowerCase();
+}
+function paragraphs(text){return text.split(/\r?\n/).map((text,i)=>({id:i+1,text:text.trim()})).filter(p=>p.text);}
+const empty=()=>({raw:'',value:null,state:'missing',evidence:[]});
+function extractStructured(text) {
+  const parts=paragraphs(text), result={};
+  for(const {key} of FIELDS) {
+    let matches=parts.flatMap(p=>{const m=p.text.match(labels[key]);return m?[{raw:m[1].trim(),quote:p.text,paragraph:p.id}]:[];});
+    if(!matches.length && ['currency','basis'].includes(key)){
+      matches=parts.flatMap(p=>{
+        if(!labels.rate.test(p.text))return [];
+        const m=key==='currency'?p.text.match(/\b(INR|USD|EUR|GBP|AUD|CAD)\b/i):p.text.match(/(?:\/|per\s+)(hour|hr|day|week|month)\b/i);
+        return m?[{raw:m[1],quote:p.text,paragraph:p.id}]:[];
+      });
+    }
+    if(!matches.length){result[key]=empty();continue;}
+    const values=matches.map(m=>normalize(key,m.raw));
+    const ambiguous=values.includes(null)||new Set(values).size!==1;
+    result[key]={raw:matches.map(m=>m.raw).join(' | '),value:ambiguous?null:values[0],state:ambiguous?'ambiguous':'found',evidence:matches};
+  }
+  result._fixedTerm=/\bfixed[ -]term\b/i.test(text);
+  return result;
+}
+function validateAIFields(candidate,text) {
+  if(!candidate||typeof candidate!=='object'||Array.isArray(candidate))throw Error('AI returned an invalid document structure.');
+  const parts=paragraphs(text),result={};
+  for(const {key} of FIELDS){
+    const f=candidate[key];
+    if(!f||f.raw===null||f.raw===''){result[key]=empty();continue;}
+    if(typeof f.raw!=='string'||f.raw.length>300||!Array.isArray(f.evidence)||!f.evidence.length){result[key]={...empty(),state:'unverified'};continue;}
+    const evidence=f.evidence.slice(0,8).filter(e=>e&&typeof e.quote==='string'&&e.quote.length>0&&e.quote.length<=2000&&Number.isInteger(e.paragraph)&&parts.some(p=>p.id===e.paragraph&&p.text.includes(e.quote)));
+    const value=normalize(key,f.raw);
+    // A real quote alone does not establish that an extracted value is supported.
+    const supported=evidence.some(e=>e.quote.toLowerCase().includes(f.raw.toLowerCase()));
+    result[key]={raw:f.raw,value:!supported||!evidence.length?null:value,state:!supported||evidence.length!==f.evidence.length?'unverified':f.ambiguous||value===null?'ambiguous':'found',evidence,ambiguous:Boolean(f.ambiguous||value===null)};
+    if(result[key].state!=='found')result[key].value=null;
+  }
+  result._fixedTerm=/\bfixed[ -]term\b/i.test(text);
+  return result;
+}
+function compare(a,b,exceptions={}) {
+  const contextConflicts=doc=>{
+    const raw=doc.rate?.raw||'', currencies=raw.match(/\b(?:INR|USD|EUR|GBP|AUD|CAD)\b/gi)||[];
+    const unit=raw.match(/(?:\/|per\s+)(hour|hr|day|week|month)\b/i)?.[1];
+    return currencies.some(c=>c.toUpperCase()!==doc.currency?.value)||(unit&&normalize('basis',unit)!==doc.basis?.value);
+  };
+  return FIELDS.map(({key,label})=>{
+    const left=a[key]||empty(),right=b[key]||empty();let status,description;
+    if(key==='end'&&left.state==='missing'&&right.state==='missing'&&!a._fixedTerm&&!b._fixedTerm) {status='optional';description='No fixed end date provided in either document. Confirm that the assignment is open-ended.';}
+    else if(left.state==='missing'||right.state==='missing') {status='missing';description='A required term is absent from one or both documents.';}
+    else if(!['found','manual'].includes(left.state)||!['found','manual'].includes(right.state)) {status='uncertain';description='The value is ambiguous, unsupported, or not recognized. Verify it before proceeding.';}
+    else if(key==='end'&&(a.start?.value&&left.value<a.start.value||b.start?.value&&right.value<b.start.value)) {status='uncertain';description='An end date precedes its start date. Verify the assignment period.';}
+    else if(key==='rate'&&(contextConflicts(a)||contextConflicts(b))) {status='uncertain';description='The bill-rate wording conflicts with an extracted currency or billing unit. Verify the fields together.';}
+    else if(key==='rate'&&(!a.currency?.value||!b.currency?.value||!a.basis?.value||!b.basis?.value||a.currency.value!==b.currency.value||a.basis.value!==b.basis.value)) {status='uncertain';description='Amounts cannot be compared until currency and rate basis are confirmed and aligned.';}
+    else if(left.value!==right.value){status='mismatch';description='The confirmed order and draft agreement contain different values.';}
+    else{status='match';description=left.state==='manual'||right.state==='manual'?'Values align after a recorded user correction.':'The extracted values match.';}
+    const exception=exceptions[key];
+    return {key,label,left,right,status,description,exception:status==='mismatch'&&exception?exception:null};
+  });
+}
+function readiness(rows){
+  if(rows.some(r=>r.status==='missing'||r.status==='mismatch'&&!r.exception))return 'Review required';
+  if(rows.some(r=>r.status==='uncertain'))return 'Unable to assess';
+  if(rows.some(r=>r.exception))return 'Reviewed with exceptions';
+  return 'Checks clear';
+}
+function exposure(a,b,hours){
+  const rateRow=compare(a,b).find(r=>r.key==='rate');
+  if(rateRow?.status!=='mismatch'||!(hours>0&&hours<=1000))return null;
+  return {difference:Math.abs(Number(a.rate.value)-Number(b.rate.value)),total:Math.abs(Number(a.rate.value)-Number(b.rate.value))*hours,currency:a.currency.value,basis:a.basis.value,hours};
+}
+function clarification(rows){
+  const open=rows.filter(r=>!['match','optional'].includes(r.status)&&!r.exception);
+  if(!open.length)return 'The configured comparison checks have been reviewed. Please complete the normal approval process before proceeding to signature.';
+  return 'Hello,\n\nBefore this staffing agreement moves to approval, please confirm the following:\n\n'+open.map(r=>`- ${r.label}: confirmed order states ${r.left.raw||'[not found]'}; draft agreement states ${r.right.raw||'[not found]'}. ${r.description}`).join('\n')+'\n\nPlease confirm the intended terms and provide an updated draft where needed.\n\nThank you.';
+}
+const order=`CONFIRMED STAFFING ORDER - SYNTHETIC SAMPLE
+Client: Northstar Analytics Pvt Ltd
+Staffing agency: Meridian Talent Pvt Ltd
+Assignment ID: JO-1042
+Role: Data Engineer
+Start date: 2 November 2026
+End date: 30 April 2027
+Client bill rate: INR 2,000 per hour
+Weekly hours: 40
+Payment terms: Net 30`;
+const agreement=`DRAFT ASSIGNMENT AGREEMENT - SYNTHETIC SAMPLE
+Client entity: Northstar Analytics Pvt Ltd
+Supplier: Meridian Talent Pvt Ltd
+Order ID: JO-1042
+Job title: Data Engineer
+Commencement date: 2026-11-02
+Completion date: 2027-04-30
+Billing rate: INR 1,800/hour
+Hours per week: forty hours weekly
+Payment: 30 days`;
+const SAMPLES=[
+  {id:'mismatch',title:'Rate mismatch',subtitle:'Spot a commercial discrepancy',order,agreement},
+  {id:'missing',title:'Missing terms',subtitle:'Catch an incomplete agreement',order,agreement:agreement.replace('1,800','2,000').replace('\nPayment: 30 days','')},
+  {id:'aligned',title:'Aligned agreement',subtitle:'Verify a consistent draft',order,agreement:agreement.replace('1,800','2,000')}
+];
+
+return {FIELDS,SAMPLES,extractStructured,validateAIFields,compare,readiness,exposure,clarification,normalize};
+})();
+const AI_ENDPOINT="";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let state=null, selected='mismatch', activeField=null, busy=false, revision=0;
+const labels={match:'Matches',mismatch:'Mismatch',missing:'Missing',uncertain:'Verify',optional:'Optional'};
+function notify(text,error=false){$('notice').textContent=text;$('notice').classList.toggle('error',error);}
+function counts(){for(const id of ['order','agreement'])$(id+'-count').textContent=`${$(id).value.length.toLocaleString()} / 12,000 characters`;}
+function invalidate(message='Documents changed. Compare again to refresh the review.'){
+  revision++;state=null;$('results').hidden=true;$('results').innerHTML='';notify(message);counts();
+  document.querySelectorAll('.steps li').forEach((li,i)=>li.classList.toggle('current',i===0));
+}
+function load(id){const sample=SAMPLES.find(s=>s.id===id);selected=id;invalidate('Fictional sample loaded. Edit either document or compare as provided.');$('order').value=sample?.order||'';$('agreement').value=sample?.agreement||'';counts();document.querySelectorAll('.sample').forEach(b=>b.classList.toggle('selected',b.dataset.sample===id));}
+$('samples').innerHTML=SAMPLES.map(s=>`<button class="sample" data-sample="${s.id}" type="button"><strong>${esc(s.title)}</strong><small>${esc(s.subtitle)}</small></button>`).join('');
+document.querySelectorAll('[data-sample]').forEach(b=>b.onclick=()=>load(b.dataset.sample));
+$('own').onclick=()=>{load(null);notify('Paste your document text. For local review, use labeled fields such as Client:, Start date:, and Bill rate:.');$('order').focus();};
+$('reset').onclick=()=>{if(busy)return;load('mismatch');$('mode').value='structured';modeNote();};
+for(const id of ['order','agreement'])$(id).oninput=()=>invalidate();
+for(const input of document.querySelectorAll('input[type=file]'))input.onchange=async()=>{
+  const file=input.files[0],id=input.dataset.document;if(!file)return;
+  try{if(file.size>48000||!file.name.toLowerCase().endsWith('.txt'))throw Error('Choose a UTF-8 .txt file smaller than 48 KB.');
+    const text=new TextDecoder('utf-8',{fatal:true}).decode(await file.arrayBuffer());if(text.length>12000)throw Error('Each document can contain up to 12,000 characters.');
+    $(id).value=text;invalidate('Text file loaded. Compare again to review it.');
+  }catch(e){notify(e.message,true);}finally{input.value='';}
+};
+for(const label of document.querySelectorAll('label.upload')){
+  label.tabIndex=0;label.setAttribute('role','button');label.setAttribute('aria-label',label.querySelector('input').dataset.document==='order'?'Upload confirmed order text file':'Upload draft agreement text file');
+  label.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();label.querySelector('input').click();}};
+}
+function modeNote(){
+  $('mode-note').textContent=$('mode').value==='ai'?(AI_ENDPOINT?'Live AI sends both documents to Cloudflare. Use synthetic or redacted text.':'Live AI is not connected yet. Structured review is available now. Structured review is available now.'):'Reads labeled fields locally. No AI inference or document transmission.';
+  invalidate('Review method changed. Compare documents to start a fresh review.');
+}
+$('mode').onchange=modeNote;
+async function runReview(){
+  if(busy)return;
+  const order=$('order').value.trim(),agreement=$('agreement').value.trim(),method=$('mode').value;
+  if(!order||!agreement){notify('Add both documents before comparing.',true);return;}
+  if(order.length>12000||agreement.length>12000){notify('Each document must be 12,000 characters or fewer.',true);return;}
+  if(method==='ai'&&!AI_ENDPOINT){notify('Live AI is not connected. Use Structured text review.',true);return;}
+  if(method==='ai'&&!window.confirm('Live AI will send both documents to the configured Cloudflare service. Use only synthetic or properly redacted text. Continue?'))return;
+  busy=true;$('review').disabled=true;$('review').textContent=method==='ai'?'Reading with AI…':'Comparing…';
+  const version=revision,started=performance.now();state=null;$('results').hidden=true;notify(method==='ai'?'Reading both documents and verifying returned evidence…':'Checking labeled fields and commercial terms…');
+  const controller=new AbortController();let timer;
+  try{
+    let left,right,model=null;
+    if(method==='ai'){
+      timer=setTimeout(()=>controller.abort(),60000);
+      const res=await fetch(AI_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({order,agreement}),signal:controller.signal});
+      const body=await res.json().catch(()=>({error:'The AI service returned an unreadable response.'}));
+      if(!res.ok)throw Error(body.error||'Live AI is unavailable. No review was produced.');
+      left=validateAIFields(body.order,order);right=validateAIFields(body.agreement,agreement);model=body.model;
+    }else{left=extractStructured(order);right=extractStructured(agreement);}
+    if(version!==revision){notify('Documents changed during processing. Compare the latest text again.',true);return;}
+    state={id:globalThis.crypto?.randomUUID?.()||String(Date.now()),createdAt:new Date().toISOString(),method,model,elapsedMs:Math.round(performance.now()-started),documents:{order,agreement},left,right,exceptions:{},corrections:[],units:160,openOnly:false,draft:null};
+    render();$('results').focus();notify(method==='ai'?'AI extraction completed. Verify the source evidence before using the findings.':'Structured review complete. Only supported labeled fields were read.');
+  }catch(e){notify(e.name==='AbortError'?'The AI request timed out. No result was substituted. Try again or use structured review.':e.message,true);}
+  finally{clearTimeout(timer);busy=false;$('review').disabled=false;$('review').innerHTML='Compare documents <span aria-hidden="true">→</span>';}
+}
+$('review').onclick=runReview;
+function rows(){return compare(state.left,state.right,state.exceptions);}
+function fieldValue(f){return f.raw||'Not found';}
+function render(){
+  const all=rows(),status=readiness(all),open=all.filter(r=>!['match','optional'].includes(r.status)&&!r.exception),view=state.openOnly?all.filter(r=>!['match','optional'].includes(r.status)):all;
+  const exp=exposure(state.left,state.right,state.units),draft=state.draft??clarification(all);
+  $('results').hidden=false;
+  $('results').innerHTML=`<div class="status-banner ${status==='Checks clear'?'good':''}"><div><h3>${esc(status)}</h3><p>${state.method==='ai'?'Live AI extraction + rule-based comparison':'Local labeled-field extraction + rule-based comparison'} · ${all.length} configured checks</p><p>Commercial checks only. Complete your normal approval process.</p></div><div class="review-count">${open.length}<small>open findings</small></div></div><div class="results-tools"><label><input type="checkbox" id="open-only" ${state.openOnly?'checked':''}> Show findings and exceptions only</label><span class="small">Select Evidence to verify or correct a term.</span></div><div class="table-scroll"><table><caption class="sr-only">Comparison of confirmed order and draft agreement</caption><thead><tr><th scope="col">Term</th><th scope="col">Confirmed order</th><th scope="col">Draft agreement</th><th scope="col">Result</th><th scope="col">Review</th></tr></thead><tbody>${view.map(r=>`<tr><td>${esc(r.label)}${r.exception?`<small>Exception: ${esc(r.exception.reason)}</small>`:''}</td><td>${esc(fieldValue(r.left))}${r.left.state==='manual'?'<small>User corrected</small>':''}</td><td>${esc(fieldValue(r.right))}${r.right.state==='manual'?'<small>User corrected</small>':''}</td><td><span class="badge ${r.exception?'exception':r.status}">${r.exception?'Exception':labels[r.status]}</span></td><td><button class="inspect" data-field="${r.key}">Evidence</button></td></tr>`).join('')||'<tr><td colspan="5">No open findings or accepted exceptions.</td></tr>'}</tbody></table></div>${exp?`<div class="exposure"><p><strong>${esc(exp.currency)} ${exp.total.toLocaleString(undefined,{maximumFractionDigits:2})}</strong> illustrative gross billing difference</p><label>Assumed billed ${esc(exp.basis)}s in period<input type="number" id="units" min="1" max="1000" value="${state.units}"></label><small>${exp.difference.toLocaleString()} per ${esc(exp.basis)} difference. This is a scenario, not realized savings, profit, or recovered revenue.</small></div>`:''}<div class="next-step"><h3>Prepare the next conversation.</h3><p>Review and edit this clarification. Nothing is sent automatically.</p><label class="sr-only" for="draft-message">Clarification message</label><textarea id="draft-message">${esc(draft)}</textarea><div class="actions"><button id="copy" class="secondary">Copy message</button><button id="regenerate" class="text-button">Refresh from findings</button><button id="export-md" class="secondary">Export review .md</button><button id="export-json" class="secondary">Export review .json</button></div></div>`;
+  $('open-only').onchange=e=>{state.openOnly=e.target.checked;render();};
+  document.querySelectorAll('[data-field]').forEach(b=>b.onclick=()=>openDetail(b.dataset.field));
+  $('draft-message').oninput=e=>{state.draft=e.target.value;};
+  $('regenerate').onclick=()=>{state.draft=null;render();};
+  $('copy').onclick=async()=>{try{await navigator.clipboard.writeText($('draft-message').value);$('copy').textContent='Copied ✓';}catch{$('draft-message').focus();$('draft-message').select();notify('Clipboard is unavailable. The message is selected; use your normal Copy command.');}};
+  $('export-md').onclick=()=>download('md');$('export-json').onclick=()=>download('json');
+  if($('units'))$('units').onchange=e=>{state.units=Number(e.target.value);if(!Number.isFinite(state.units)||state.units<1||state.units>1000){state.units=160;notify('Choose between 1 and 1,000 billed units.',true);}render();};
+  document.querySelectorAll('.steps li').forEach((li,i)=>li.classList.toggle('current',i>0));
+}
+function openDetail(key){
+  activeField=key;const r=rows().find(r=>r.key===key);$('detail-title').textContent=r.label;$('dialog-error').textContent='';
+  $('detail-evidence').innerHTML=`<p class="small">${esc(r.description)}</p>`+[['Confirmed order',r.left],['Draft agreement',r.right]].map(([name,f])=>`<div class="evidence-card"><h3>${name} · ${esc(f.state)}</h3><strong>${esc(fieldValue(f))}</strong>${f.evidence.map(e=>`<blockquote>${esc(e.quote)}</blockquote><small>Source line ${e.paragraph}</small>`).join('')||'<p>No supporting passage found.</p>'}${f.note?`<p>User correction: ${esc(f.note)}</p>`:''}</div>`).join('');
+  $('left-edit').value=r.left.raw;$('right-edit').value=r.right.raw;$('correction-reason').value='';$('exception-reason').value=r.exception?.reason||'';
+  $('exception-form').hidden=r.status!=='mismatch';$('reopen').hidden=!r.exception;
+  $('detail').showModal();
+}
+$('close-dialog').onclick=()=>$('detail').close();
+$('detail').onclick=e=>{if(e.target===$('detail')){const r=$('detail').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('detail').close();}};
+$('edit-form').onsubmit=e=>{
+  e.preventDefault();const l=$('left-edit').value.trim(),r=$('right-edit').value.trim(),note=$('correction-reason').value.trim();
+  if(!note){$('dialog-error').textContent='Record what you verified before saving.';return;}
+  if(normalize(activeField,l)===null||normalize(activeField,r)===null){$('dialog-error').textContent='Enter supported values. Use ISO dates, explicit currency codes, numeric amounts/hours, or Net 30 style payment terms.';return;}
+  const timestamp=new Date().toISOString();
+  for(const [side,raw]of [['left',l],['right',r]]){
+    if(state[side][activeField].raw===raw&&state[side][activeField].state==='found')continue;
+    const old=structuredClone(state[side][activeField]);state[side][activeField]={...old,raw,value:normalize(activeField,raw),state:'manual',note,timestamp};
+    state.corrections.push({field:activeField,side,before:old,after:raw,note,timestamp});
+  }
+  // Changing units/currency changes the interpretation of an accepted rate.
+  delete state.exceptions[activeField];if(['basis','currency'].includes(activeField))delete state.exceptions.rate;
+  state.draft=null;$('detail').close();render();notify('Correction recorded and all comparison rules rerun.');
+};
+$('exception-form').onsubmit=e=>{
+  e.preventDefault();const reason=$('exception-reason').value.trim();if(!reason){$('dialog-error').textContent='Add a reason for accepting this exception.';return;}
+  state.exceptions[activeField]={reason,timestamp:new Date().toISOString()};state.draft=null;$('detail').close();render();notify('Exception recorded. It remains visible in the review and export.');
+};
+$('reopen').onclick=()=>{delete state.exceptions[activeField];state.draft=null;$('detail').close();render();notify('Finding reopened.');};
+function download(format){
+  const record={...state,status:readiness(rows()),findings:rows(),clarification:$('draft-message').value,exportedAt:new Date().toISOString(),notice:'Session record only. Not a legal approval, signature, or tamper-proof audit log.'};
+  const text=format==='json'?JSON.stringify(record,null,2):`# Staffing agreement readiness review\n\nReview: ${record.id}\nCreated: ${record.createdAt}\nExported: ${record.exportedAt}\nMethod: ${record.method}\nModel: ${record.model||'No model, local rules'}\nStatus: ${record.status}\n\n${record.notice}\n\n## Findings\n\n`+record.findings.map(r=>`### ${r.label}: ${r.exception?'accepted exception':r.status}\nOrder: ${r.left.raw||'[not found]'}\nAgreement: ${r.right.raw||'[not found]'}\n${r.description}\n${r.exception?'Exception: '+r.exception.reason+'\n':''}${[['Order',r.left],['Agreement',r.right]].map(([label,f])=>f.evidence.map(e=>`${label}, source line ${e.paragraph}: ${e.quote}`).join('\n')).join('\n')}`).join('\n\n')+`\n\n## User corrections\n\n${record.corrections.map(c=>`${c.timestamp} | ${c.side}.${c.field}: ${c.before.raw} -> ${c.after}. Reason: ${c.note}`).join('\n')||'None'}\n\n## Clarification\n\n${record.clarification}\n\n## Source: confirmed order\n\n${record.documents.order}\n\n## Source: draft agreement\n\n${record.documents.agreement}\n`;
+  const url=URL.createObjectURL(new Blob([text],{type:format==='json'?'application/json':'text/markdown'})),a=document.createElement('a');a.href=url;a.download=`staffing-review-${record.id.slice(0,8)}.${format}`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function calculator(){
+  const values=['volume','before','after','cost'].map(id=>{const input=$(id),n=Number(input.value);return Number.isFinite(n)?Math.max(0,Math.min(Number(input.max),n)):0;});
+  const [volume,before,after,cost]=values,hours=volume*(before-after)/60;
+  $('hours-value').textContent=hours.toLocaleString(undefined,{maximumFractionDigits:1});$('money-value').textContent='INR '+Math.round(hours*cost).toLocaleString();
+}
+for(const id of ['volume','before','after','cost'])$(id).oninput=calculator;
+load('mismatch');calculator();
+</script>
+</head>
+<body>
+<a href="#workspace" class="skip">Skip to workspace</a>
+<header class="topbar"><a href="#" class="brand"><span class="brand-icon">S<span>✓</span></span><span>Staffing<span class="brand-light">desk</span></span></a><nav aria-label="Main navigation"><a href="#workspace" class="active">Workspace</a><a href="#workflow">Workflow</a><a href="#value">Value</a><a href="#about">Product story</a></nav><span class="portfolio">A product by Abhijnan Chaturvedi</span></header>
+<main>
+<section class="hero"><div><p class="eyebrow"><span class="dot"></span> STAFFING OPERATIONS / AGREEMENT READINESS</p><h1>Catch the mismatch.<br><em>Before the signature.</em></h1><p class="intro">Compare a confirmed staffing order with its draft agreement. Find the differences, inspect the evidence, and move forward with clarity.</p><a href="#workspace" class="primary hero-action">Start a review <span aria-hidden="true">↗</span></a></div><aside class="hero-note"><span class="note-label">THE MOMENT THAT MATTERS</span><div class="mini-doc"><span>Confirmed order</span><strong>INR 2,000<span>/ hour</span></strong></div><div class="mini-doc"><span>Draft agreement</span><strong>INR 1,800<span>/ hour</span></strong></div><p><span class="warning-icon">!</span> Small difference. Real billing exposure.</p><small>Illustrative, fictional example</small></aside></section>
+<section id="workspace" class="workspace">
+<div class="section-heading"><div><p class="eyebrow">01 / YOUR WORKSPACE</p><h2>A clearer path to approval.</h2></div><button class="text-button" id="reset">Reset review ↺</button></div>
+<div class="workspace-grid"><aside class="sidebar"><h3>Choose a starting point</h3><p>Three fictional cases. One complete workflow.</p><div id="samples"></div><button id="own" class="own-button">+ Use my own text</button><div class="privacy"><span>◈</span><strong>You're in control</strong><p>Structured review runs in your browser. Live AI sends text to the configured AI service only when you choose it. Use synthetic or redacted documents.</p></div><div class="scope"><strong>Review scope</strong><p>Commercial consistency only. Final approval stays with you.</p></div></aside>
+<div class="work-main"><ol class="steps" aria-label="Review steps"><li class="current"><b>1</b> Add documents</li><li><b>2</b> Review differences</li><li><b>3</b> Prepare next steps</li></ol>
+<div class="document-grid"><article class="document-card"><div class="doc-heading"><div><span class="doc-tag">REFERENCE</span><h3>Confirmed staffing order</h3></div><label class="upload">Upload .txt<input type="file" accept=".txt,text/plain" data-document="order" hidden></label></div><label class="sr-only" for="order">Confirmed staffing order text</label><textarea id="order" maxlength="12000" spellcheck="false"></textarea><p class="doc-foot"><span id="order-count"></span><span>Reference for this comparison</span></p></article><article class="document-card"><div class="doc-heading"><div><span class="doc-tag draft">DRAFT</span><h3>Assignment agreement</h3></div><label class="upload">Upload .txt<input type="file" accept=".txt,text/plain" data-document="agreement" hidden></label></div><label class="sr-only" for="agreement">Draft assignment agreement text</label><textarea id="agreement" maxlength="12000" spellcheck="false"></textarea><p class="doc-foot"><span id="agreement-count"></span><span>Document being reviewed</span></p></article></div>
+<div class="review-toolbar"><div><label for="mode">Review method</label><select id="mode"><option value="structured">Structured text review</option><option value="ai">Live AI extraction</option></select><p id="mode-note">Reads labeled fields locally. No AI inference or document transmission.</p></div><button id="review" class="primary">Compare documents <span aria-hidden="true">→</span></button></div><p id="notice" role="status" aria-live="polite"></p>
+<section id="results" hidden aria-label="Review results" tabindex="-1"></section>
+</div></div></section>
+<section id="workflow" class="information"><p class="eyebrow">02 / THE WORKFLOW</p><h2>From documents to decisions.</h2><div class="workflow-cards"><article><span>01</span><h3>Bring the context</h3><p>Start with the confirmed order and draft agreement. Define the comparison reference.</p></article><article><span>02</span><h3>Find the differences</h3><p>Extract key terms and compare entities, rates, dates, hours, and payment terms.</p></article><article><span>03</span><h3>Check the evidence</h3><p>Inspect original passages. Correct an extraction or document an accepted exception.</p></article><article><span>04</span><h3>Close the loop</h3><p>Prepare a clarification and export the review. Complete your normal approval process.</p></article></div></section>
+<section id="value" class="value-section"><div><p class="eyebrow">03 / VALUE TO VALIDATE</p><h2>Less review effort.<br>Fewer avoidable surprises.</h2><p>The goal is to reduce active review time while maintaining or improving discrepancy detection. These inputs are assumptions you can change, not measured outcomes.</p></div><div class="calculator"><div class="calc-inputs"><label>Agreements / month<input id="volume" type="number" min="0" max="100000" value="100"></label><label>Manual review / minutes<input id="before" type="number" min="0" max="1440" value="20"></label><label>Assisted review / minutes<input id="after" type="number" min="0" max="1440" value="8"></label><label>Loaded cost / INR per hour<input id="cost" type="number" min="0" max="100000" value="1000"></label></div><div class="calc-output"><div><strong id="hours-value">20</strong><span>hours of capacity / month</span></div><div><strong id="money-value">INR 20,000</strong><span>illustrative capacity value / month</span></div></div><small>Capacity value is not necessarily cash savings. Billing exposure is calculated separately.</small></div></section>
+<section id="about" class="information about"><div><p class="eyebrow">04 / THE PRODUCT STORY</p><h2>One review.<br>A clearer decision.</h2><p>Staffing teams prepare agreements using information spread across confirmed orders and draft documents. A different rate, missing payment term, or incorrect date can trigger another round of follow-up.</p><p>This assistant brings those terms and their source evidence together before the agreement moves to approval.</p></div><div><h3>The problem</h3><p>Manual document comparison takes effort, and small commercial differences are easy to overlook.</p><h3>The solution</h3><p>Compare the key terms, see exactly where a finding comes from, correct an extraction, record an exception, and prepare the next conversation in one place.</p><h3>The value to validate</h3><p>Reduce active review effort and avoid preventable rework while maintaining discrepancy detection. The value calculator shows assumptions, not measured customer savings.</p><h3>What this demo supports</h3><p>English labeled text, editable sample documents, source evidence, corrections, exception notes, clarification drafting, and review exports. Structured review runs locally. Live AI extraction requires a connected service and is clearly identified when selected.</p><p>Final commercial and legal approval remains with the authorized reviewer.</p></div></section>
+</main><footer><span>Staffingdesk / Staffing Agreement Readiness Assistant</span><span>Designed by Abhijnan Chaturvedi</span></footer>
+<dialog id="detail"><form id="edit-form"><div class="dialog-heading"><h2 id="detail-title"></h2><button type="button" id="close-dialog" class="icon-button" aria-label="Close detail">×</button></div><div id="detail-evidence"></div><div class="correction-grid"><label>Confirmed order value<input id="left-edit" maxlength="300" required></label><label>Draft agreement value<input id="right-edit" maxlength="300" required></label></div><label>Reason for correction<textarea id="correction-reason" maxlength="500" placeholder="Explain what you verified in the source." required></textarea></label><p class="small">Manual corrections are attributed to the user and retained in this session's export.</p><button type="submit" class="primary">Save correction and recheck</button></form><hr><form id="exception-form"><label>Accept this mismatch as an exception<textarea id="exception-reason" maxlength="500" placeholder="Record the reason and any required approval." required></textarea></label><div class="actions"><button type="submit" class="secondary">Record exception</button><button type="button" id="reopen" class="text-button">Reopen finding</button></div><p class="small">Missing and uncertain information must be verified, not waived.</p></form><p id="dialog-error" role="alert"></p></dialog>
+</body></html>
