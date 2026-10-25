@@ -24,6 +24,10 @@ The Product story section includes a downloadable Word brief covering the proble
 
 The application also explains the problem, solution, workflow, and potential value. Its value calculator uses editable assumptions, not measured customer savings.
 
+## Business presentation
+
+[View the business presentation in your browser](https://chaturvediabhijnan-ctrl.github.io/staffing-agreement-readiness-assistant/#presentation). Use Download PowerPoint in the presentation to save the editable deck.
+
 ## Current scope
 
 Structured text review works in the browser without login or paid services. It uses explicit rules to read labeled fields. Live AI extraction requires a separately connected service and is not active in this release. The product clearly distinguishes these methods.
